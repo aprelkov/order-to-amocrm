@@ -1,30 +1,29 @@
 <?php
 if(empty($contact['id'])) { 
     $contact=array(
-			'name'=>$data['first_name'],
-			'linked_leads_id'=>array($lead_id),
-			'custom_fields'=>array(
-				array(
-					'id'=>$custom_fields['EMAIL'],
-					'values'=>array(
-						array(
-							'value'=>$data['email'],
-							'enum'=>'PRIV'
-						)
-					)
-				)
-			)
-		);
-if(!empty($data['phone']))
-	$contact['custom_fields'][]=array(
-		'id'=>$custom_fields['PHONE'],
+        'name'=>$data['first_name'],
+	'linked_leads_id'=>array($lead_id),
+	'custom_fields'=>array(
+	    array(
+	        'id'=>$custom_fields['EMAIL'],
 		'values'=>array(
-			array(
-				'value'=>$data['phone'],
-				'enum'=>'MOB'
-			)
+		    array(
+			'value'=>$data['email'],
+			'enum'=>'PRIV'
+		    )
 		)
-);
+	    )
+	),
+        array(
+            'id'=>$custom_fields['PHONE'],
+            'values'=>array(
+	        array(
+	            'value'=>$data['phone'],
+	            'enum'=>'MOB'
+	        )
+	    )
+        )
+    );
 
 $set['request']['contacts']['add'][]=$contact;
 
@@ -69,12 +68,10 @@ else {
 		'last_modified' => $data['created'],
 		'name' => $data['first_name']
 		);
-		
-    print_r ($contact); #Выводим исходящий массив для теста
     
     $set['request']['contacts']['update'][] = $contact;
     
-#Формируем ссылку для запроса
+    #Формируем ссылку для запроса
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/set';
 $curl=curl_init(); #Сохраняем дескриптор сеанса cURL
 #Устанавливаем необходимые опции для сеанса cURL
@@ -95,7 +92,8 @@ $code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 
 $Response=json_decode($out,true);
 $Response2=$Response['response']['contacts']['update'];
-
-print_r ($Response); #Выводим обновленный массив для теста
 }
+
+echo 'Сделка и контакт успешно добавлены. <br>Обновите раздел сделок amoCRM.';
+    
 ?>
