@@ -1,0 +1,21 @@
+body {
+    padding: 150px;
+}
+form {
+    text-align: center; 
+    margin-bottom: 50px;
+}
+input {
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px solid #fff;
+    cursor: pointer
+}
+.order {
+    background-color: #c00;
+}
+.paid {
+    background-color: #080;
+}
