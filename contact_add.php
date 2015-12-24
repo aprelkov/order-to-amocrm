@@ -70,11 +70,11 @@ else {
 		'name' => $data['first_name']
 		);
 		
-    print_r ($contact);
+    print_r ($contact); #Выводим исходящий массив для теста
     
     $set['request']['contacts']['update'][] = $contact;
     
-    #Формируем ссылку для запроса
+#Формируем ссылку для запроса
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/set';
 $curl=curl_init(); #Сохраняем дескриптор сеанса cURL
 #Устанавливаем необходимые опции для сеанса cURL
@@ -96,7 +96,6 @@ $code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 $Response=json_decode($out,true);
 $Response2=$Response['response']['contacts']['update'];
 
-print_r ($Response);
+print_r ($Response); #Выводим обновленный массив для теста
 }
-    
 ?>
