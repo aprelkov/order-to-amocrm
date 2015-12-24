@@ -19,5 +19,4 @@ CheckCurlResponse($code);
 $Response=json_decode($out,true);
 $Response=$Response['response']['leads'];
 $lead=$Response[0];
-print_r ($lead);
 ?>
