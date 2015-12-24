@@ -1,50 +1,43 @@
 <?php  
 
 $fn = array(
-'id' => '111111',
-'first_name' => 'имя клиента',
-'last_name' => 'фамилия',
-'middle_name' => 'отчество',
-'email' => 'test@test.ru',
-'phone' => '89200000000',
+'id' => '123456',
+'first_name' => 'John',
+'email' => 'test@test.com',
+'phone' => '+1 310 0000000',
 'utm' => array(
-    'medium' => 'med',
-    'source' => 'sour',
-    'campaign' => 'comp'
+    'medium' => 'social',
+    'source' => 'facebook',
+    'campaign' => 'test1'
     ),
 'items' => array(
 array(
-'id' => '123',
-'title' => 'Курс',
+'id' => '001',
+'title' => 'Lesson 1',
 'sum' => '990'
 ),
 array(
-'id' => '456',
-'title' => 'Курс2',
+'id' => '002',
+'title' => 'Lesson 2',
 'sum' => '9990'
 )
 )
 ); 
 
 echo "<form action='order_jc.php' method='post'>"; 
-
-
 foreach($fn as $key => $val) 
 { 
       echo "<input type=hidden name=$key value=$val>"; 
 } 
-echo  "<input type='submit' value='Новая сделка'>";
+echo  "<input type='submit' value='Order'>";
 echo  "</form><br><br><br>";
-
 
 echo "<form action='paid_jc.php' method='post'>"; 
-
-
 foreach($fn as $key => $val) 
 { 
       echo "<input type=hidden name=$key value=$val>"; 
 } 
-echo  "<input type='submit' value='Оплачено'>";
-echo  "</form><br><br><br>";
+echo  "<input type='submit' value='Paid'>";
+echo  "</form>";
 
 ?>
