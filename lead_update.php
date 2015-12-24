@@ -50,8 +50,6 @@
 			)
 		)
     );
-		
-    print_r ($lead);
     
     $set['request']['leads']['update'][] = $lead;
     
@@ -75,7 +73,5 @@ $out=curl_exec($curl); #Инициируем запрос к API и сохран
 $code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 
 $Response=json_decode($out,true);
-$Response2=$Response['response']['leads']['update'];
-
-print_r ($Response);
+$Response=$Response['response']['leads']['update'];
 ?>
