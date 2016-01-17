@@ -12,8 +12,7 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 <b>Binding of Contact to the Lead</b>
 <br/>All Contacts are linking to the relevant Leads.
 <br/>If Contact with the email address already exists, Leads are tying to the existing Contact. The new Contact isn't creating.
-<br/>However, there is a small bug in the internal contacts search algorithm of amoCRM. If an email address before or after the at sign @ contains less than 3 characters, then these characters are not considered in the search, and the Lead can be attached to a similar Contact.  
-<br/>Fortunately this bug occurs very rarely.
+<br/>However, there is a small bug in the internal contacts search algorithm of amoCRM. If an email address before or after the at sign @ contains less than 3 characters, then these characters are not considered in the search, and the Lead can be attached to a similar Contact. <br/>Fortunately this bug occurs very rarely.
 
 <h3>Setting up:</h3>
 
