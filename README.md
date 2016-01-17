@@ -1,3 +1,41 @@
+<h1>Integration with amoCRM Justclick and not only</h1>
+
+<h3>Why do I need this script:</h3>
+
+This script automatically creates a connected transaction and contact to amoCRM when ordering goods in Justclick.
+<br/>And when you pay - amoCRM status changes to "successfully implemented".
+
+With small adjustments, this script can be easily adapted to integrate amoCRM <b><u>with any other external system</u></b> that sends data set in the order.
+
+<h3>Features of work:</h3>
+
+Binding of contact to the transaction
+<br/>All contacts are linked to the relevant transaction.
+<br/>If contact with the email address already exists, transactions tied to an existing contact. The new is created.
+<br/>However, there is a small bug in the internal search algorithm contacts amoCRM. If in an email before or after the dog @ contains less than 3 characters, then these characters are not considered in the search, and the transaction can be attached to a similar contact. <br>Fortunately error due to this feature are rare.
+
+<h3>Setting up:</h3>
+
+Set up your account amoCRM submitting your hook in the order to the address file order_jc.php, and when you pay - on paid_jc.php;
+<br/>The file prepare.php edit the data and variables from the resulting array that you want to use;
+<br/>The file auth.php replace the authorization data on your data amoCRM: Username (email), Hash (key API) and a subdomain;
+<br/>The file leads_info.php at the top of the script, edit the list of variables for the custom fields as you need;
+<br/>The files lead_add.php lead_update.php and edit additional fields id and which variables you want to send them.
+
+<h3>Testing:</h3>
+
+This repository I created a convenient test function.
+<br/>You do not need to fill out a form every time and make an order for the integrable service.
+<br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order (Order) and Paid (paid). Clicking on any of them, you are sending an array symitiruete service.
+<br/>To use the test, remove the test on the # icon before the last line in the file prepare.php, and replace the array in the file test / prepare.php the one who sends the order and pay at the server side.
+
+<h3>Maintenance:</h3>
+
+If you have something does not work or there are any questions, write to me in PM.
+<br>I'm pleased to help you!
+<br/><br/><br/>
+
+
 <h1>Интеграция amoCRM с Justclick, и не только</h1>
 
 <h3>Зачем нужен этот скрипт:</h3>
