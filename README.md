@@ -17,7 +17,7 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 
 <h3>Setting up:</h3>
 
-Set up your account amoCRM submitting webhook when ordering to the order_jc.php, and when you pay - to paid_jc.php;
+Set up your account amoCRM submitting webhook when ordering to the order_jc.php, and when you pay – to the paid_jc.php;
 <br/>The file prepare.php: Edit the data and variables from the resulting array that you want to use;
 <br/>The file auth.php: Replace the authorization data on your data amoCRM: Username (email), Hash (key API) and a Subdomain;
 <br/>The file leads_info.php: Edit the list of variables for the custom fields as you need at the top of the Script;
@@ -27,10 +27,10 @@ Set up your account amoCRM submitting webhook when ordering to the order_jc.php,
 
 At this repository I created a convenient test function.
 <br/>You needn't to fill out a form every time and make an order on service that you are integrating.
-<br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by Service.
-<br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file test/prepare.php the one that the Servise sends at the time of order or payment.
+<br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by the Service.
+<br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file test/prepare.php the one that the Service sends at the time of order or payment.
 
-<h3>Maintenance:</h3>
+<h3>Support:</h3>
 
 If you have something doesn't work or any questions, write to me in PM.
 <br>I'm pleased to help you!
