@@ -1,13 +1,13 @@
-<h1>Integration with amoCRM Justclick and not only</h1>
+<h1>Integration amoCRM & Justclick, and not only</h1>
 
-<h3>Why do I need this script:</h3>
+<h3>What is this Script:</h3>
 
-This script automatically creates a connected transaction and contact to amoCRM when ordering goods in Justclick.
-<br/>And when you pay - amoCRM status changes to "successfully implemented".
+This Script automatically creates connected Lead and Contact in amoCRM when ordering goods in Justclick.
+<br/>And when you pay - amoCRM status changes to "Successfully Implemented".
 
-With small adjustments, this script can be easily adapted to integrate amoCRM <b><u>with any other external system</u></b> that sends data set in the order.
+With small adjustments, this Script can be easily adapted to integrate amoCRM <b><u>with any other external System</u></b> that sends data array in the time of order.
 
-<h3>Features of work:</h3>
+<h3>Features:</h3>
 
 Binding of contact to the transaction
 <br/>All contacts are linked to the relevant transaction.
