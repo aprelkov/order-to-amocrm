@@ -1,6 +1,6 @@
 <h1>Integration amoCRM & Justclick, and not only</h1>
 
-<h3>What is this Script:</h3>
+<h3>Objective:</h3>
 
 This Script automatically creates connected Lead and Contact in amoCRM when ordering goods in Justclick.
 <br/>And when you pay – amoCRM status changes to "Successfully Implemented".
