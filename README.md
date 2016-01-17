@@ -17,15 +17,15 @@ Binding of Contact to the Lead
 <h3>Setting up:</h3>
 
 Set up your account amoCRM submitting webhook when ordering to the order_jc.php, and when you pay - to paid_jc.php;
-<br/>Edit the data and variables from the resulting array that you want to use at the file prepare.php;
-<br/>The file auth.php replace the authorization data on your data amoCRM: Username (email), Hash (key API) and a Subdomain;
-<br/>The file leads_info.php at the top of the script, edit the list of variables for the custom fields as you need;
-<br/>The files lead_add.php lead_update.php and edit additional fields id and which variables you want to send them.
+<br/>The file prepare.php: Edit the data and variables from the resulting array that you want to use;
+<br/>The file auth.php: Replace the authorization data on your data amoCRM: Username (email), Hash (key API) and a Subdomain;
+<br/>The file leads_info.php: Edit the list of variables for the custom fields as you need at the top of the Script;
+<br/>The files lead_add.php and lead_update.php: Edit additional fields id and which variables you want to send them.
 
 <h3>Testing:</h3>
 
-This repository I created a convenient test function.
-<br/>You do not need to fill out a form every time and make an order for the integrable service.
+At this repository I created a convenient test function.
+<br/>You needn't to fill out a form every time and make an order for the integrable service.
 <br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order (Order) and Paid (paid). Clicking on any of them, you are sending an array symitiruete service.
 <br/>To use the test, remove the test on the # icon before the last line in the file prepare.php, and replace the array in the file test / prepare.php the one who sends the order and pay at the server side.
 
