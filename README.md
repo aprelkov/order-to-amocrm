@@ -20,18 +20,18 @@ Set up your account amoCRM submitting webhook when ordering to the order_jc.php,
 <br/>The file prepare.php: Edit the data and variables from the resulting array that you want to use;
 <br/>The file auth.php: Replace the authorization data on your data amoCRM: Username (email), Hash (key API) and a Subdomain;
 <br/>The file leads_info.php: Edit the list of variables for the custom fields as you need at the top of the Script;
-<br/>The files lead_add.php and lead_update.php: Edit additional fields id and which variables you want to send them.
+<br/>The files lead_add.php and lead_update.php: Edit additional fields id and variables that you want to send to them.
 
 <h3>Testing:</h3>
 
 At this repository I created a convenient test function.
-<br/>You needn't to fill out a form every time and make an order for the integrable service.
-<br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order (Order) and Paid (paid). Clicking on any of them, you are sending an array symitiruete service.
-<br/>To use the test, remove the test on the # icon before the last line in the file prepare.php, and replace the array in the file test / prepare.php the one who sends the order and pay at the server side.
+<br/>You needn't to fill out a form every time and make an order on service that you are integrating.
+<br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by Service.
+<br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file test/prepare.php the one that the Servise sends at the time of order or payment.
 
 <h3>Maintenance:</h3>
 
-If you have something does not work or there are any questions, write to me in PM.
+If you have something doesn't work or any questions, write to me in PM.
 <br>I'm pleased to help you!
 <br/><br/><br/>
 
@@ -60,7 +60,7 @@ If you have something does not work or there are any questions, write to me in P
 <h3>Тестирование:</h3>
 В этом репозитории я создал удобную функцию тестирования. 
 <br>Вам не нужно каждый раз заполнять форму и делать заказ на интегрируемом сервисе. 
-<br>Просто откройте корневую папку (файл index.html) после загрузки скрипта на Ваш хостинг, и вы увидите 2 кнопки: Order (Заказать) и Paid (Оплачено). Нажав на любую из них, Вы сымитируете отправку массива сервисом.
+<br>Просто откройте корневую папку (файл index.html) после загрузки скрипта на Ваш хостинг, и вы увидите 2 кнопки: Order (Заказать) и Paid (Оплачено). Нажав на любую из них, Вы симитируете отправку массива сервисом.
 <br>Чтобы воспользоваться функцией тестирования, уберите на время тестирования значок # перед последней строкой в файле prepare.php, и замените массив в файле test/prepare.php на тот, который отправляет при заказе и оплате сторонний сервер.
 
 <h3>Техподдержка:</h3>
