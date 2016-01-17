@@ -17,17 +17,17 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 <h3>Setting up:</h3>
 
 Set up in your account amoCRM Web Hook submitting to the <i>order_jc.php</i>, and when you pay – to the <i>paid_jc.php</i> when ordering;
-<br/>The file prepare.php: Edit the Data and Variables from the resulting Array that you want to use;
-<br/>The file auth.php: Replace the authorization Data on your amoCRM Data: Username (email), Hash (key API) and a Subdomain;
-<br/>The file leads_info.php: Edit the list of Variables for the custom fields as you need at the top of the Script;
-<br/>The files lead_add.php and lead_update.php: Edit additional fields id and variables that you want to send to them.
+<br/>The file <i>prepare.php</i>: Edit the Data and Variables from the resulting Array that you want to use;
+<br/>The file <i>auth.php</i>: Replace the authorization Data on your amoCRM Data: Username (email), Hash (key API) and a Subdomain;
+<br/>The file <i>leads_info.php</i>: Edit the list of Variables for the custom fields as you need at the top of the Script;
+<br/>The files <i>lead_add.php</i> and <i>lead_update.php</i>: Edit additional fields id and variables that you want to send to them.
 
 <h3>Testing:</h3>
 
 At this repository I created a convenient test function.
 <br/>You needn't to fill out a form every time and make an order on service that you are integrating.
-<br/>Just open the root folder (file index.html) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by the Service.
-<br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file test/prepare.php the one that the Service sends at the time of order or payment.
+<br/>Just open the root folder (file <i>index.html</i>) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by the Service.
+<br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file <i>test/prepare.php</i> the one that the Service sends at the time of order or payment.
 
 <h3>Support:</h3>
 
