@@ -16,10 +16,10 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 
 <h3>Setting up:</h3>
 
-Set up your account amoCRM submitting webhook when ordering to the order_jc.php, and when you pay – to the paid_jc.php;
-<br/>The file prepare.php: Edit the data and variables from the resulting array that you want to use;
-<br/>The file auth.php: Replace the authorization data on your data amoCRM: Username (email), Hash (key API) and a Subdomain;
-<br/>The file leads_info.php: Edit the list of variables for the custom fields as you need at the top of the Script;
+Set up in your account amoCRM Web Hook submitting to the <i>order_jc.php</i>, and when you pay – to the <i>paid_jc.php</i> when ordering;
+<br/>The file prepare.php: Edit the Data and Variables from the resulting Array that you want to use;
+<br/>The file auth.php: Replace the authorization Data on your amoCRM Data: Username (email), Hash (key API) and a Subdomain;
+<br/>The file leads_info.php: Edit the list of Variables for the custom fields as you need at the top of the Script;
 <br/>The files lead_add.php and lead_update.php: Edit additional fields id and variables that you want to send to them.
 
 <h3>Testing:</h3>
