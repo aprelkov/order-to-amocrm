@@ -9,10 +9,10 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 
 <h3>Features:</h3>
 
-Binding of contact to the transaction
-<br/>All contacts are linked to the relevant transaction.
-<br/>If contact with the email address already exists, transactions tied to an existing contact. The new is created.
-<br/>However, there is a small bug in the internal search algorithm contacts amoCRM. If in an email before or after the dog @ contains less than 3 characters, then these characters are not considered in the search, and the transaction can be attached to a similar contact. <br>Fortunately error due to this feature are rare.
+Binding of Contact to the Lead
+<br/>All Contacts are linking to the relevant Leads.
+<br/>If Contact with the email address already exists, Leads are tying to the existing Contact. The new one isn't creating.
+<br/>However, there is a small bug in the internal contacts search algorithm of amoCRM. If in an email before or after the at @ contains less than 3 characters, then these characters are not considered in the search, and the Lead can be attached to a similar Contact. <br>Fortunately this bug occurs very rarely.
 
 <h3>Setting up:</h3>
 
