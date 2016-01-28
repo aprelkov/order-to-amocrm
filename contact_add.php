@@ -1,4 +1,5 @@
 <?php
+
 if(empty($contact['id'])) { 
     $contact=array(
         'name'=>$data['first_name'],
