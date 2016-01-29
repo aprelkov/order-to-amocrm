@@ -1,6 +1,5 @@
 <?php
-#пропишите ниже массив, который вам будет приходить со стороннего сервиса
-#ниже описан массив приходящий от Justclick при оплате там товара
+# Describe the Array, which will come to you from the external Service.
 $data=array(
 'id' => '123456',
 'first_name' => 'Alexey',
