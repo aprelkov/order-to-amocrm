@@ -19,7 +19,7 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 Set up in your account JustClick (or any other Service) Webhook submitting to the <i>order_jc.php</i> when ordering, and to the <i>paid_jc.php</i> when you pay;
 <br/>The file <i>prepare.php</i>: Edit the Data and Variables from the resulting Array;
 <br/>The file <i>auth.php</i>: Replace the authorization Data on your amoCRM Data: Username (email), Hash (API key) and Subdomain;
-<br/>The file <i>leads_info.php</i>: Edit the list of Variables for the custom Fields as you need at the top of the Script;
+<br/>The file <i>fields_info.php</i>: Edit the list of Variables for the custom Fields as you need at the top of the Script;
 <br/>The files <i>lead_add.php</i> and <i>lead_update.php</i>: Edit additional Fields Id as well as Variables that you want to send to them.
 
 <h3>Testing:</h3>
@@ -54,7 +54,7 @@ If you have any questions, write to me in PM.
 1. Настройте в аккаунте amoCRM отправку веб-хука при заказе на адрес файла order_jc.php, а при оплате - на paid_jc.php;
 2. В файле prepare.php отредактируйте данные и переменные из полученного массива, которые вы хотите использовать;
 3. В файле auth.php замените данные для авторизации на ваши данные amoCRM: Логин (email), Хэш (ключ API) и субдомен;
-4. В файле leads_info.php в верхней части скрипта отредактируйте список переменных для дополнительных полей, как вам нужно;
+4. В файле fields_info.php в верхней части скрипта отредактируйте список переменных для дополнительных полей, как вам нужно;
 5. В файлах lead_add.php и lead_update.php отредактируйте id дополнительных полей и какие переменные вы хотите в них отправлять.
 
 <h3>Тестирование:</h3>
