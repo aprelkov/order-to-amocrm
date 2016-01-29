@@ -1,11 +1,11 @@
 <?php
 error_reporting(-1);
 $root=__DIR__.DIRECTORY_SEPARATOR;
-require $root.'prepare.php'; #Здесь будут производиться подготовительные действия, объявления функций и т.д.
-require $root.'auth.php'; #Здесь будет происходить авторизация пользователя
-require $root.'account_current.php'; #Здесь мы будем получать информацию об аккаунте
-require $root.'fields_info.php'; #Получим информацию о полях
-require $root.'contacts_list.php'; #Проверяем, существует ли уже контакт с таким email
-require $root.'lead_add.php'; #Здесь будет происходить добавление сделки
-require $root.'contact_add.php'; #Здесь будет происходить добавление контакта
+require $root.'prepare.php'; # There will be carried out preparatory acts, declarations of functions, etc.
+require $root.'auth.php'; # There will be user authentication
+require $root.'account_current.php'; # Here we will receive information about account
+require $root.'fields_info.php'; # Obtain information about the fields
+require $root.'contacts_list.php'; # Obtain contact information
+require $root.'lead_add.php'; # There will be adding a Laed
+require $root.'contact_add.php'; # There will be adding a Contact lenked with the Lead
 ?>
