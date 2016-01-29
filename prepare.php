@@ -1,4 +1,5 @@
 <?php
+
 function CheckCurlResponse($code)
     {
 	$code=(int)$code;
@@ -14,29 +15,29 @@ function CheckCurlResponse($code)
 	);
 	try
 	{
-		#Если код ответа не равен 200 или 204 - возвращаем сообщение об ошибке
+		# If the response code is not equal to 200 or 204 - returns an error message
 		if($code!=200 && $code!=204)
 			throw new Exception(isset($errors[$code]) ? $errors[$code] : 'Undescribed error',$code);
 	}
 	catch(Exception $E)
 	{
-		die('Ошибка: '.$E->getMessage().PHP_EOL.'Код ошибки: '.$E->getCode());
+		die('Error: '.$E->getMessage().PHP_EOL.'Error code: '.$E->getCode());
 	}
     }
 
 $data=array(
-    'id'=>isset($_POST['id']) ? $_POST['id'] : 'id',
-    'first_name'=>isset($_POST['first_name']) ? $_POST['first_name'] : 'name',
+    'id'=>isset($_POST['id']) ? $_POST['id'] : 'no_id',
+    'first_name'=>isset($_POST['first_name']) ? $_POST['first_name'] : 'no_name',
     'phone'=>isset($_POST['phone']) ? $_POST['phone'] : '',
-    'email'=>isset($_POST['email']) ? $_POST['email'] : 'email',
+    'email'=>isset($_POST['email']) ? $_POST['email'] : 'no_email',
     'items'=>isset($_POST['items']) ? $_POST['items'] : '',
     'utm'=>isset($_POST['utm']) ? $_POST['utm'] : '',
     'created'=>isset($_POST['created']) ? $_POST['created'] : '',
-    'paid'=>isset($_POST['paid']) ? $_POST['paid'] : '',	
+    'paid'=>isset($_POST['paid']) ? $_POST['paid'] : ''	
     );
 
-#строка ниже используется для тестирования
-#чтобы выключить ее - поставьте перед ней значок решетки, чтобы включить - удалите решетку
+# The String below is used for testing
+# To enable it - remove the sign # in front of the String below, to disable - return it
 # require 'test/prepare.php';
 
 ?>
