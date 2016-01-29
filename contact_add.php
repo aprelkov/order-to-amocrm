@@ -55,7 +55,7 @@ CheckCurlResponse($code);
 $Response=json_decode($out,true);
 $Response=$Response['response']['contacts']['add'];
  
-$output='ID добавленных контактов:'.PHP_EOL;
+$output='Added contacts IDs:'.PHP_EOL;
 foreach($Response as $v)
 	if(is_array($v))
 		$output.=$v['id'].PHP_EOL;
@@ -96,6 +96,6 @@ $Response=json_decode($out,true);
 $Response2=$Response['response']['contacts']['update'];
 }
 
-echo 'Сделка и контакт успешно добавлены. <br>Обновите раздел сделок amoCRM.';
+echo 'The Lead was successfully added.';
     
 ?>
