@@ -62,7 +62,8 @@ foreach($Response as $v)
 return $output;
 }
 
-else { 
+
+else {   # If such Contact already exists in amoCRM, we attach new Lead to it
     $contact=array(
 		'id' => $contact['id'],
 		'linked_leads_id' => array($lead_id),
