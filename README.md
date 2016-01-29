@@ -11,7 +11,7 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 
 <b>Binding of Contact to the Lead</b>
 <br/>All Contacts are linking to the relevant Leads.
-<br/>If Contact with the Email already exists, Leads are tying to the existing Contact. The new Contact isn't creating.
+<br/>If Contact with the Email already exists, Leads are linking to the existing Contact. The new Contact isn't creating.
 <br/>However, there is a small bug in the internal contacts search algorithm of amoCRM. If an email address before or after the at sign @ contains less than 3 characters, then these characters are not considered in the search, and the Lead can be attached to a similar Contact. <br/>Fortunately this bug occurs very rarely.
 
 <h3>Setting up:</h3>
@@ -24,7 +24,7 @@ Set up in your account amoCRM Web Hook submitting to the <i>order_jc.php</i>, an
 
 <h3>Testing:</h3>
 
-At this repository I created a convenient test function.
+At this Repository I created a convenient test function.
 <br/>You needn't to fill out a form every time and make an order on service that you are integrating.
 <br/>Just open the root folder (file <i>index.html</i>) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by the Service.
 <br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file <i>test/prepare.php</i> the one that the Service sends at the time of order or payment.
