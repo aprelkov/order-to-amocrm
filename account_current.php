@@ -17,7 +17,7 @@ curl_close($curl);
 CheckCurlResponse($code);
 /**
  * Obtain data in JSON-format, therefore, to obtain the data being read,
- * We have to translate the answer into a format understood by PHP
+ * we have to translate the answer into a format understood by PHP
  */
 $Response=json_decode($out,true);
 $account=$Response['response']['account'];
