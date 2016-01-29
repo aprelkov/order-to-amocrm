@@ -2,7 +2,7 @@
 
 <h3>Objective:</h3>
 
-This Script automatically creates connected Lead and Contact in amoCRM when ordering goods in Justclick.
+This Script automatically creates connected Lead and Contact in amoCRM when ordering Goods in Justclick.
 <br/>After payment, amoCRM status changes to "Successfully Implemented".
 
 With small adjustments, this Script can be easily adapted to integrate amoCRM <b><u>with ANY OTHER external System</u></b> that sends data Array in the time of order.
