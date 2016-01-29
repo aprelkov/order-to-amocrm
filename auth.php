@@ -2,7 +2,7 @@
 # An array of parameters that must be passed by the POST method to the API
 $user=array(
 	'USER_LOGIN'=>'me@gmail.com', # Your login (email)
-	'USER_HASH'=>'7ebefd1d4741106a4daa0e0a673bba2e4dc16054' # Hash to access the API (see profile)
+	'USER_HASH'=>'142efd1d4741106a4daa0e0a673bba2e49876880' # Hash to access the API (see profile)
 );
  
 $subdomain='your_subdomain'; # Your account (subdomain)
