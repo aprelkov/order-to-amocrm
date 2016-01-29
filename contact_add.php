@@ -1,6 +1,6 @@
 <?php
 
-if(empty($contact['id'])) { 
+if(empty($contact['id'])) {   # If such Сontact doesn't exist in amoCRM, then we create a new Contact
     $contact=array(
         'name'=>$data['first_name'],
 	'linked_leads_id'=>array($lead_id),
