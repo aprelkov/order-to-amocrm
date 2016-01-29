@@ -1,6 +1,6 @@
 <?php
 
-# Declare Variables
+# Announce Variables
 
 $title1=$data['items'][0]['title'];
 $sum1=$data['items'][0]['sum'];
