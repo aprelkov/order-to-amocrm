@@ -25,7 +25,7 @@ Set up in your account JustClick (or any other Service) Web Hook submitting to t
 <h3>Testing:</h3>
 
 At this Repository I created a convenient test function.
-<br/>You needn't to fill out a form every time and make an order on service that you are integrating.
+<br/>You needn't to fill out a form each time and make an order on service that you are integrating.
 <br/>Just open the root folder (file <i>index.html</i>) after loading the script on your hosting, and you'll see two buttons: Order and Paid. Clicking on any of them, you'll simulate sending an array by the Service.
 <br/>To use the test, remove the # icon before the last line in the file prepare.php while testing, and replace the array in the file <i>test/prepare.php</i> the one that the Service sends at the time of order or payment.
 
