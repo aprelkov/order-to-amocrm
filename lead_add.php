@@ -1,11 +1,12 @@
 <?php
+
 $lead=array(
     'name'=>$data['id'],
     'price'=>$sum
     );
 if(!empty($title1))
 	$lead['custom_fields'][]=array(
-		'id'=>'798180', #замените на id вашего дополнительного поля в amoCRM
+		'id'=>'798180', # Replace this value on your custom field ID
 		'values'=>array(
 			array(
 				'value'=>$title1
@@ -14,28 +15,10 @@ if(!empty($title1))
 );
 if(!empty($title2))
 	$lead['custom_fields'][]=array(
-		'id'=>'801558', #замените на id вашего дополнительного поля в amoCRM
+		'id'=>'801558', # Replace this value on your custom field ID
 		'values'=>array(
 			array(
 				'value'=>$title2
-			)
-		)
-);
-if(!empty($title3))
-	$lead['custom_fields'][]=array(
-		'id'=>'807078', #замените на id вашего дополнительного поля в amoCRM
-		'values'=>array(
-			array(
-				'value'=>$title3
-			)
-		)
-);
-if(!empty($title4))
-	$lead['custom_fields'][]=array(
-		'id'=>'807080', #замените на id вашего дополнительного поля в amoCRM
-		'values'=>array(
-			array(
-				'value'=>$title4
 			)
 		)
 );
