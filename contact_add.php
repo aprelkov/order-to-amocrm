@@ -62,7 +62,6 @@ foreach($Response as $v)
 return $output;
 }
 
-
 else {   # If such Contact already exists in amoCRM, we attach new Lead to it
     $contact=array(
 		'id' => $contact['id'],
