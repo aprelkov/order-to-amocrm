@@ -18,7 +18,7 @@ With small adjustments, this Script can be easily adapted to integrate amoCRM <b
 
 Set up in your account JustClick (or any other Service) Web Hook submitting to the <i>order_jc.php</i> when ordering, and when you pay – to the <i>paid_jc.php</i>;
 <br/>The file <i>prepare.php</i>: Edit the Data and Variables from the resulting Array;
-<br/>The file <i>auth.php</i>: Replace the authorization Data on your amoCRM Data: Username (email), Hash (key API) and a Subdomain;
+<br/>The file <i>auth.php</i>: Replace the authorization Data on your amoCRM Data: Username (email), Hash (API key) and Subdomain;
 <br/>The file <i>leads_info.php</i>: Edit the list of Variables for the custom fields as you need at the top of the Script;
 <br/>The files <i>lead_add.php</i> and <i>lead_update.php</i>: Edit additional fields id and variables that you want to send to them.
 
