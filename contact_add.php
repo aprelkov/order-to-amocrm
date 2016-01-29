@@ -60,8 +60,8 @@ foreach($Response as $v)
 	if(is_array($v))
 		$output.=$v['id'].PHP_EOL;
 return $output;
-
 }
+
 else { 
     $contact=array(
 		'id' => $contact['id'],
@@ -72,10 +72,10 @@ else {
     
     $set['request']['contacts']['update'][] = $contact;
     
-    #Формируем ссылку для запроса
+# Create a link for request
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/set';
-$curl=curl_init(); #Сохраняем дескриптор сеанса cURL
-#Устанавливаем необходимые опции для сеанса cURL
+$curl=curl_init(); # Save the cURL session handle
+# Set the necessary options for cURL session
 curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-API-client/1.0');
 curl_setopt($curl,CURLOPT_URL,$link);
@@ -88,7 +88,7 @@ curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6
 curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
 curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
  
-$out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
+$out=curl_exec($curl); # Initiate a request to the API and stores the response to variable
 $code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 
 $Response=json_decode($out,true);
